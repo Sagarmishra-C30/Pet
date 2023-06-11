@@ -1,9 +1,8 @@
-#pet.py - ur cute little pet  - event driven program
+#! C:\\Program Files\\Python37-32\\pythonw.exe
+# pet.py - ur cute little pet  - event driven program
 
 from tkinter import HIDDEN, NORMAL, Tk, Canvas  #importing modules from tkinter file
 import random
-import pygame,os
-pygame.init()
 
 #states of the shape drawn -> NORMAL (visible) and HIDDEN (not visible)
 # Switching between two states is known as “toggling.”
@@ -166,7 +165,5 @@ c.tongue_out = False
 root.after(1000, blink)
 root.after(5000, change_color)
 root.after(5000, sad)
-# if 'bubbly.bmp' not in os.listdir('newp'):
-    # pygame.image.load(c, os.getcwd() + "\\bubbly.bmp")
 
 root.mainloop() 
